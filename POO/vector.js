@@ -1,10 +1,10 @@
 class Vector {
     constructor(n, m) {
-            let vector = [];
-            for (let i = 0; i < n; i++) {
-                vector.push(Math.floor(Math.random() * (m + 1)))
-            }
-            this.vector = vector
+        let vector = [];
+        for (let i = 0; i < n; i++) {
+            vector.push(Math.floor(Math.random() * (m + 1)))
+        }
+        this.vector = vector
     }
 
     add(a) {
