@@ -6,3 +6,5 @@ console.log(person1.calculateIMC());
 console.log(person1.edad(1985));
 console.log(person1.printAll());
 console.log(person1.printHobbies());
+
+module.exports = { person1 }
