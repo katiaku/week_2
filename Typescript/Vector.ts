@@ -10,6 +10,10 @@ export class Vector {
         this.elements = elements
     }
 
+    public getElements(): number[] {
+        return this.elements;
+    }
+
     public print(): number[] {
         return this.elements;
     }
