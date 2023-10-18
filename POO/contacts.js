@@ -1,8 +1,6 @@
-let { person1 } = require ("./personTest");
-
 class Contacts {
-    constructor() {
-        this.persons = [person1];
+    constructor(persons) {
+        this.persons = persons;
     }
 
     printPersons() {
