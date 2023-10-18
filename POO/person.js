@@ -1,5 +1,5 @@
 class Person {
-    constructor(firstname, lastname, weight, height, hobbies = []) {
+    constructor(firstname, lastname, weight, height, hobbies) {
         this.firstname = firstname;
         this.lastname = lastname;
         this.weight = weight;
