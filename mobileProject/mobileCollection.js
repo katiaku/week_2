@@ -26,6 +26,17 @@ var MobileCollection = /** @class */ (function () {
     MobileCollection.prototype.setTotalPrice = function (totalPrice) {
         this.totalPrice = totalPrice;
     };
+    MobileCollection.prototype.printCollection = function () {
+        var arrMobiles = [];
+        for (var _i = 0, _a = this.mobiles; _i < _a.length; _i++) {
+            var mobile = _a[_i];
+            arrMobiles.push(mobile.printData());
+        }
+        return "This is all my mobiles:\n"
+            + arrMobiles.toString().replace(",", "\n")
+            + "\n......\nPrice overall: "
+            + this.getTotalPrice();
+    };
     return MobileCollection;
 }());
 exports.MobileCollection = MobileCollection;

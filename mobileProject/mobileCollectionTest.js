@@ -15,3 +15,4 @@ myCollection.setMobiles(mobiles2);
 myCollection.setTotalPrice(1800);
 console.log(myCollection.getMobiles());
 console.log(myCollection.getTotalPrice());
+console.log(myCollection.printCollection());

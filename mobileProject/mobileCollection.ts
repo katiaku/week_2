@@ -34,4 +34,15 @@ export class MobileCollection {
         this.totalPrice = totalPrice;
     }
 
+    public printCollection(): string {
+        let arrMobiles: string[] = [];
+        for (let mobile of this.mobiles) {
+            arrMobiles.push(mobile.printData());
+        }
+        return "This is all my mobiles:\n" 
+            + arrMobiles.toString().replace(",", "\n")
+            + "\n......\nPrice overall: "
+            + this.getTotalPrice();
+    }
+
 }
