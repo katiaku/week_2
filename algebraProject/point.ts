@@ -59,4 +59,18 @@ export class Point {
         return cuadrante;
     }
 
+    calculateNearest(points: Point[]): Point {
+        let actualPoint: Point = new Point(this.getX(), this.getY());
+        let shortestDistance: number = actualPoint.calculateDistance(points[0]);
+        let nearestPoint: Point = points[0];
+        for (let i = 1; i < points.length; i++) {
+            let distance = actualPoint.calculateDistance(points[i]);
+            if (distance < shortestDistance) {
+                shortestDistance = distance;
+                nearestPoint = points[i];
+            }  
+        }
+        return nearestPoint;
+    }
+
 }
