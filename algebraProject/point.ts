@@ -28,4 +28,19 @@ export class Point {
         return `(${this.getX()},${this.getY()})`;
     }
 
+    public distanceToOrigin(): number {
+        let distance: number = 0;
+        let point0: Point = new Point(0, 0);
+        distance = Math.sqrt(Math.pow((point0.getX() - this.getX()), 2) 
+            + Math.pow((point0.getY() - this.getY()), 2));
+        return distance;
+    }
+
+    public calculateDistance(anotherPoint: Point): number {
+        let distance: number = 0;
+        distance = Math.sqrt(Math.pow((anotherPoint.getX() - this.getX()), 2) 
+            + Math.pow((anotherPoint.getY() - this.getY()), 2));
+        return distance;
+    }
+
 }
