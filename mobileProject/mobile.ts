@@ -54,4 +54,13 @@ export class Mobile {
         this.price = price;
     }
 
+    public printData(): string {
+        return `The characteristics of the mobile ${this.name} are:
+\u00B7 Name: ${this.name}
+\u00B7 Trademark: ${this.trademark}
+\u00B7 Model: ${this.model}
+\u00B7 Color: ${this.color}
+\u00B7 Price: ${this.price}`;
+    }
+
 }
