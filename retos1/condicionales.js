@@ -38,7 +38,6 @@ function zodiac(day, month) {
     }
     return signoZodiacal;
 }
-console.log(zodiac(10, 5));
 function continent(country) {
     var paisesAsia = ["Japón", "China", "Tailandia", "Singapur", "Malasia"];
     var paisesAfrica = ["Kenia", "Madagascar", "Marruecos", "Ruanda", "Somalia"];
@@ -65,7 +64,6 @@ function continent(country) {
         console.log("Oceanía");
     }
 }
-continent("Canadá");
 function isEven(number) {
     var result = false;
     if (number % 2 === 0) {
@@ -78,4 +76,4 @@ function isEven(number) {
     }
     return result;
 }
-isEven(5);
+module.exports = { isEven: isEven };

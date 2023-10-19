@@ -10,7 +10,6 @@ function hasEven(myNums) {
     }
     return existe;
 }
-//console.log(hasEven([7, 3, 5, 6]));
 function startWithM(myNames) {
     var result = false;
     var todosM = [];
@@ -39,4 +38,3 @@ function startWithM(myNames) {
     }
     return result;
 }
-console.log(startWithM(["María", "Manuel", "Miguel"]));

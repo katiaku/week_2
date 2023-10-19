@@ -6,8 +6,6 @@ function evenNumbers(num: number): void {
     }
 }
 
-evenNumbers(10);
-
 function myRevert(myArr: string[]): string[] {
     let arrRevertido: string[] = [];
     for (let i = myArr.length - 1; i >= 0; i--) {
@@ -15,8 +13,6 @@ function myRevert(myArr: string[]): string[] {
     }
     return arrRevertido;
 }
-
-console.log(myRevert(["javascript", "tupescript", "angular"]));
 
 function isRainbow(colors: string[]): void {
     let rainbowColors: string[] = ["rojo", "naranja", "amarillo", "verde", "cian", "azul", "morado"];
@@ -29,8 +25,6 @@ function isRainbow(colors: string[]): void {
     }
 }
 
-isRainbow(["morado", "naranja", "negro", "amarillo"]);
-
 function add(myWords: string[]): number {
     let result: number = 0;
     for (let i = 0; i < myWords.length; i++) {
@@ -39,4 +33,4 @@ function add(myWords: string[]): number {
     return result;
 }
 
-console.log(add(["morado", "naranja", "negro", "amarillo"]));
+module.exports = {add};

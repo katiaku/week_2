@@ -30,8 +30,6 @@ function zodiac(day: number, month: number): string {
     return signoZodiacal;
 }
 
-console.log(zodiac(10, 5));
-
 function continent(country: string) {
     let paisesAsia: string[] = ["Japón", "China", "Tailandia", "Singapur", "Malasia"];
     let paisesAfrica: string[] = ["Kenia", "Madagascar", "Marruecos", "Ruanda", "Somalia"];
@@ -55,8 +53,6 @@ function continent(country: string) {
     }
 }
 
-continent("Canadá");
-
 function isEven(number: number): boolean {
     let result: boolean = false;
 
@@ -71,4 +67,4 @@ function isEven(number: number): boolean {
     return result;
 }
 
-isEven(5);
+module.exports = {isEven};

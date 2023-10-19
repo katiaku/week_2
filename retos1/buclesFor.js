@@ -5,7 +5,6 @@ function evenNumbers(num) {
         }
     }
 }
-evenNumbers(10);
 function myRevert(myArr) {
     var arrRevertido = [];
     for (var i = myArr.length - 1; i >= 0; i--) {
@@ -13,7 +12,6 @@ function myRevert(myArr) {
     }
     return arrRevertido;
 }
-console.log(myRevert(["javascript", "tupescript", "angular"]));
 function isRainbow(colors) {
     var rainbowColors = ["rojo", "naranja", "amarillo", "verde", "cian", "azul", "morado"];
     for (var i = 0; i < colors.length; i++) {
@@ -25,7 +23,6 @@ function isRainbow(colors) {
         }
     }
 }
-isRainbow(["morado", "naranja", "negro", "amarillo"]);
 function add(myWords) {
     var result = 0;
     for (var i = 0; i < myWords.length; i++) {
@@ -33,4 +30,4 @@ function add(myWords) {
     }
     return result;
 }
-console.log(add(["morado", "naranja", "negro", "amarillo"]));
+module.exports = { add: add };

@@ -11,8 +11,6 @@ function hasEven(myNums: number[]): boolean {
     return existe;
 }
 
-//console.log(hasEven([7, 3, 5, 6]));
-
 function startWithM(myNames: string[]): boolean {
     let result: boolean = false;
     let todosM: boolean[] = [];
@@ -39,5 +37,3 @@ function startWithM(myNames: string[]): boolean {
     }
     return result;
 }
-
-console.log(startWithM(["María", "Manuel", "Miguel"]));
