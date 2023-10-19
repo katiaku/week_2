@@ -53,8 +53,6 @@ function continent(country: string) {
     } else if (paisesOceania.includes(country)) {
         console.log("Oceanía");
     }
-
-    return continent;
 }
 
 continent("Canadá");

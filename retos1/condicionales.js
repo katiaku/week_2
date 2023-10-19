@@ -64,7 +64,6 @@ function continent(country) {
     else if (paisesOceania.includes(country)) {
         console.log("Oceanía");
     }
-    return continent;
 }
 continent("Canadá");
 function isEven(number) {
