@@ -7,6 +7,15 @@ export class MobileCollection {
 
     constructor(mobiles: Mobile[]) {
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
+    }
+
+    private totalPriceCalculation(): number {
+        let accumulator: number = 0;
+        for (let mobile of this.mobiles) {
+            accumulator += mobile.getPrice();
+        }
+        return accumulator;
     }
 
     public getMobiles(): Mobile[] {

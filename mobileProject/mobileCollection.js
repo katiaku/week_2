@@ -4,7 +4,16 @@ exports.MobileCollection = void 0;
 var MobileCollection = /** @class */ (function () {
     function MobileCollection(mobiles) {
         this.mobiles = mobiles;
+        this.totalPrice = this.totalPriceCalculation();
     }
+    MobileCollection.prototype.totalPriceCalculation = function () {
+        var accumulator = 0;
+        for (var _i = 0, _a = this.mobiles; _i < _a.length; _i++) {
+            var mobile = _a[_i];
+            accumulator += mobile.getPrice();
+        }
+        return accumulator;
+    };
     MobileCollection.prototype.getMobiles = function () {
         return this.mobiles;
     };
